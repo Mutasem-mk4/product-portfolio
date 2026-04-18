@@ -13,16 +13,17 @@ export const projects: ProjectData[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        <path d="M12 2v20" />
+        <path d="M7 7h8a4 4 0 0 1 0 8H7z" />
       </svg>
     ),
-    title: 'Project Aurora',
+    title: 'procscope',
     description:
-      'Real-time collaboration tool with live cursors, comments, and conflict-free version history for distributed teams.',
-    tags: ['TypeScript', 'React', 'WebSocket', 'Redis'],
-    status: 'Active',
-    href: '#',
-    stars: '2.4k',
+      'eBPF runtime investigation tool for Linux malware triage with process-scoped tracing, Debian autopkgtests, and upstream distro-submission work.',
+    tags: ['Go', 'eBPF', 'Linux', 'Debian', 'BlackArch'],
+    status: 'Shipped',
+    href: 'https://github.com/Mutasem-mk4/procscope',
+    stars: '2',
   },
   {
     icon: (
