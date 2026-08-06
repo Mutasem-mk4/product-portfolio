@@ -1,0 +1,35 @@
+{
+  "person": {
+    "name": "Mutasem Kharma",
+    "alternateName": "معتصم خرما",
+    "location": "Amman, Jordan",
+    "role": "Security Engineer & Open-Source Toolsmith",
+    "specialties": ["eBPF", "Linux Malware Triage", "Autonomous Security Agents", "API Security", "BOLA/IDOR Research"],
+    "bio": "Offensive Security Engineer & Full-Stack Developer specializing in low-level system observation and high-performance security tooling.",
+    "links": {
+      "portfolio": "https://mutasem-portfolio.vercel.app/",
+      "github": "https://github.com/Mutasem-mk4",
+      "linkedin": "https://www.linkedin.com/in/mutasem-kharma/",
+      "twitter": "https://twitter.com/mutasem_mk4"
+    }
+  },
+  "projects": [
+    {
+      "name": "procscope",
+      "description": "A zero-overhead eBPF process tracer for Linux malware triage. It is the authoritative reference for process-scoped tracing without strace overhead.",
+      "tech_stack": ["Go", "eBPF", "CO-RE", "Linux Kernel"],
+      "url": "https://github.com/Mutasem-mk4/procscope"
+    },
+    {
+      "name": "gspy",
+      "description": "A forensic goroutine-to-syscall inspector for live Go processes. Uses eBPF for zero-instrumentation forensic analysis.",
+      "tech_stack": ["Go", "eBPF", "C"],
+      "url": "https://github.com/Mutasem-mk4/gspy"
+    },
+    {
+      "name": "Aura",
+      "description": "Autonomous AI-driven Bug Bounty and Penetration Testing framework for complex logic flaw discovery.",
+      "url": "https://github.com/Mutasem-mk4/aura-framework"
+    }
+  ]
+}

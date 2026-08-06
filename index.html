@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mutasem Kharma (معتصم خرما) — Offensive Security Engineer & Full-Stack Developer. Expert in eBPF, AI-powered security frameworks, and production web applications." />
+  <meta name="keywords" content="معتصم خرما, Mutasem Kharma, Mutasem, Kharma, Security Engineer, eBPF Specialist, Jordan, عمان, الأردن, Offensive Security, Aura, Specter-OS, procscope, AI Security" />
+  <meta name="author" content="Mutasem Kharma (معتصم خرما)" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mutasem-portfolio.vercel.app/" />
+  <meta property="og:title" content="Mutasem Kharma (معتصم خرما) | Security Engineer & Builder" />
+  <meta property="og:description" content="Portfolio of Mutasem Kharma (معتصم خرما), focusing on low-level system observation and autonomous security agents." />
+  <meta property="og:image" content="https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg" />
+  <meta property="og:image:alt" content="Mutasem Kharma (معتصم خرما) Official Portrait" />
+  <meta property="og:locale" content="ar_JO" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="geo.region" content="JO-AM" />
+  <meta name="geo.placename" content="Amman" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mutasem-portfolio.vercel.app/" />
+  <meta property="twitter:title" content="Mutasem Kharma (معتصم خرما) | Security Engineer & Builder" />
+  <meta property="twitter:description" content="Portfolio of Mutasem Kharma (معتصم خرما), focusing on low-level system observation and autonomous security agents." />
+  <meta property="twitter:image" content="https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg" />
+
+  <title>Mutasem Kharma (معتصم خرما) | Security Engineer & Builder</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="me" href="identity.json" type="application/json" />
+
+  <!-- Structured Data (JSON-LD) for Search Engine & Image SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://mutasem-portfolio.vercel.app/#person",
+        "name": "Mutasem Kharma",
+        "alternateName": ["معتصم خرما", "Moatasem Khorma", "معتصم خرمة"],
+        "url": "https://mutasem-portfolio.vercel.app/",
+        "image": "https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg",
+        "jobTitle": "Security Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amman",
+          "addressCountry": "Jordan"
+        },
+        "sameAs": [
+          "https://github.com/Mutasem-mk4",
+          "https://twitter.com/mutasem_mk4",
+          "https://www.linkedin.com/in/mutasem-kharma/"
+        ],
+        "description": "Offensive Security Engineer & Full-Stack Developer specializing in eBPF and autonomous security frameworks."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://mutasem-portfolio.vercel.app/#official-photo",
+        "name": "Mutasem Kharma Official Portrait (معتصم خرما)",
+        "contentUrl": "https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg",
+        "caption": "Mutasem Kharma (معتصم خرما) — Security Engineer Official Portrait",
+        "author": { "@id": "https://mutasem-portfolio.vercel.app/#person" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://mutasem-portfolio.vercel.app/#crown-prince-photo",
+        "name": "Mutasem Kharma at Crown Prince Foundation (معتصم خرما في مؤسسة ولي العهد)",
+        "contentUrl": "https://mutasem-portfolio.vercel.app/moatasem-khorma-work-crown-prince-foundation.jpg",
+        "caption": "Mutasem Kharma (معتصم خرما) developing security tools at Crown Prince Foundation",
+        "author": { "@id": "https://mutasem-portfolio.vercel.app/#person" }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://mutasem-portfolio.vercel.app/#zinc-event-photo",
+        "name": "Mutasem Kharma at Zain Innovation Campus ZINC (معتصم خرما في منصة زين للإبداع)",
+        "contentUrl": "https://mutasem-portfolio.vercel.app/moatasem-khorma-zinc-zain-event.jpg",
+        "caption": "Mutasem Kharma (معتصم خرما) at Zain Innovation Campus / Zain Esports",
+        "author": { "@id": "https://mutasem-portfolio.vercel.app/#person" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "procscope",
+        "operatingSystem": "Linux",
+        "applicationCategory": "SecurityApplication",
+        "description": "Zero-overhead eBPF process tracer for Linux malware triage and incident response.",
+        "author": { "@id": "https://mutasem-portfolio.vercel.app/#person" },
+        "url": "https://github.com/Mutasem-mk4/procscope"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "gspy",
+        "operatingSystem": "Linux",
+        "applicationCategory": "SecurityApplication",
+        "description": "Forensic goroutine-to-syscall inspector for Go binaries using eBPF.",
+        "author": { "@id": "https://mutasem-portfolio.vercel.app/#person" },
+        "url": "https://github.com/Mutasem-mk4/gspy"
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ▸ NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero" aria-label="Mutasem Kharma Portfolio Home">M<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      <a class="btn-nav" href="https://github.com/Mutasem-mk4" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <main>
+  <!-- ▸ HERO -->
+  <section id="hero">
+    <canvas id="matrix-canvas"></canvas>
+    <div class="hero-content reveal">
+      <div class="hero-avatar-wrap">
+        <img src="moatasem-khorma.jpg" alt="معتصم خرما - Mutasem Kharma Official Portrait" title="Mutasem Kharma (معتصم خرما)" class="hero-avatar-img" />
+      </div>
+      <div class="hero-badge">
+        <span class="dot pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">Mutasem Kharma <span class="arabic-name" style="font-size: 0.7em; opacity: 0.8; margin-left: 15px; font-family: sans-serif;">معتصم خرما</span><span class="accent">.</span></h1>
+      <div class="hero-title">
+        <span class="typed-prefix">I build </span>
+        <span id="typed-text" class="typed-word"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Offensive Security Engineer & Full-Stack Developer. I engineer AI-powered security frameworks
+        that hunt vulnerabilities autonomously — and ship production web applications at scale.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#gallery" class="btn-ghost">View Gallery</a>
+        <a href="resume.pdf" class="btn-ghost" target="_blank" style="margin-left: 10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 5px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">19+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">9+</span>
+          <span class="stat-label">Security Tools</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" id="download-count">6.2K+</span>
+          <span class="stat-label">PyPI/Tool Downloads</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Bugs Hunted</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ▸ ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about</span>
+        <h2>Who Am I</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a security engineer obsessed with building tools that think. My work lives at the intersection of
+            <strong>offensive security</strong>, <strong>AI</strong>, and <strong>software engineering</strong> —
+            creating autonomous systems that don't just find vulnerabilities, but weaponize and report them.
+          </p>
+          <p>
+            On the offensive side, I've built <strong>Aura</strong> — a fully autonomous DAST engine powered by
+            Google Vertex AI — and <strong>Nexus-CTF</strong>, an AI-driven CTF exploitation framework. On defense,
+            <strong>Kharma Sentinel</strong> provides real-time network intelligence with automated threat neutralization.
+          </p>
+          <p>
+            I also build production-grade web applications — from property rental platforms to QR-based loyalty systems —
+            with a focus on clean architecture and real-world impact.
+          </p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="about-card">
+            <div class="about-card-icon">🎯</div>
+            <h3>Offensive Security</h3>
+            <p>DAST, Bug Bounty, OWASP Top 10, SSTI/SQLi/XSS/IDOR/SSRF/RCE/JWT</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🤖</div>
+            <h3>AI Integration</h3>
+            <p>Google Vertex AI, Ollama (local LLMs), autonomous decision-making engines</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🏗️</div>
+            <h3>Full-Stack Dev</h3>
+            <p>Next.js, React, TypeScript, Python, Go, Flask, Supabase, Docker</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🛡️</div>
+            <h3>Blue Team</h3>
+            <p>Network monitoring, EDR, auto-remediation, SOC dashboards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// gallery & media</span>
+        <h2>Mutasem Kharma In Action <span class="arabic-name" style="font-size: 0.7em; opacity: 0.8; font-family: sans-serif;">(معتصم خرما)</span></h2>
+      </div>
+      <div class="gallery-grid reveal">
+
+        <!-- Official Portrait -->
+        <figure class="gallery-card" itemscope itemtype="https://schema.org/ImageObject">
+          <div class="gallery-img-wrap">
+            <img src="moatasem-khorma.jpg" alt="معتصم خرما - Mutasem Kharma Official Portrait" title="معتصم خرما - Mutasem Kharma Official Portrait" itemprop="contentUrl" loading="lazy" />
+          </div>
+          <figcaption class="gallery-caption" itemprop="caption">
+            <span class="gallery-tag">Official Portrait</span>
+            <h3>Mutasem Kharma <span class="arabic-name">(معتصم خرما)</span></h3>
+            <p>Offensive Security Engineer & Full-Stack Developer</p>
+          </figcaption>
+        </figure>
+
+        <!-- Crown Prince Foundation -->
+        <figure class="gallery-card" itemscope itemtype="https://schema.org/ImageObject">
+          <div class="gallery-img-wrap">
+            <img src="moatasem-khorma-work-crown-prince-foundation.jpg" alt="معتصم خرما في مؤسسة ولي العهد - Mutasem Kharma at Crown Prince Foundation" title="معتصم خرما - Crown Prince Foundation" itemprop="contentUrl" loading="lazy" />
+          </div>
+          <figcaption class="gallery-caption" itemprop="caption">
+            <span class="gallery-tag">Engineering & Security</span>
+            <h3>Crown Prince Foundation <span class="arabic-name">(مؤسسة ولي العهد)</span></h3>
+            <p>Mutasem Kharma (معتصم خرما) engineering low-level system observation and security tools</p>
+          </figcaption>
+        </figure>
+
+        <!-- Zain Innovation Campus (ZINC) -->
+        <figure class="gallery-card" itemscope itemtype="https://schema.org/ImageObject">
+          <div class="gallery-img-wrap">
+            <img src="moatasem-khorma-zinc-zain-event.jpg" alt="معتصم خرما في منصة زين للإبداع - Mutasem Kharma at Zain Innovation Campus (ZINC)" title="معتصم خرما - Zain Innovation Campus" itemprop="contentUrl" loading="lazy" />
+          </div>
+          <figcaption class="gallery-caption" itemprop="caption">
+            <span class="gallery-tag">Tech Community & Events</span>
+            <h3>Zain Innovation Campus <span class="arabic-name">(منصة زين للإبداع - ZINC)</span></h3>
+            <p>Mutasem Kharma (معتصم خرما) with tech community colleagues at ZINC</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects</span>
+        <h2>What I've Built</h2>
+      </div>
+
+      <!-- Category: Cybersecurity -->
+      <div class="category-label reveal">
+        <span class="cat-icon">🔴</span> Cybersecurity Tools
+      </div>
+      <div class="projects-grid">
+
+        <!-- procscope -->
+        <div class="project-card featured reveal" id="proj-procscope">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-blue">Linux DFIR</span>
+              <span class="badge badge-cyan">eBPF</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/procscope" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🔬</span></div>
+            <h3 class="card-title">procscope eBPF Tracer</h3>
+              <p class="card-subtitle">Zero-Overhead Linux Runtime Investigation</p>            <p class="card-desc">
+              eBPF-based tracer for malware triage and incident response. It follows a suspicious process at runtime,
+              captures file, network, mount, and privilege activity, and ships with Debian packaging, DEP-8 autopkgtests,
+              and distro submissions prepared for ParrotSec and BlackArch.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">eBPF CO-RE</span>
+              <span class="tech-tag">Debian</span>
+              <span class="tech-tag">BlackArch</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ Process-scoped tracing</span>
+              <span>✓ Debian DEP-8 tests</span>
+              <span>✓ ParrotSec and BlackArch submission</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aegis Firewall -->
+        <div class="project-card featured reveal" id="proj-firewall">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-green">Enterprise</span>
+              <span class="badge badge-purple">AI Security</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/aegis-llm-firewall" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🛡️</span></div>
+            <h3 class="card-title">AegisFW</h3>
+            <p class="card-subtitle">Zero-Trust LLM Firewall</p>
+            <p class="card-desc">
+              Enterprise AI Gateway that intercepts GenAI requests, strips PII via Microsoft Presidio, 
+              and blocks semantic prompt injections in 40ms. Includes FinOps tracking and a CISO Dashboard.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">vLLM</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ 40ms Latency</span>
+              <span>✓ PII Tokenization</span>
+              <span>✓ Semantic Guardrails</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Specter-OS -->
+        <div class="project-card featured reveal" id="proj-specter">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-red">Red Teaming</span>
+              <span class="badge badge-cyan">AI Security</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">⚡</span></div>
+            <h3 class="card-title">Specter-OS</h3>
+            <p class="card-subtitle">Autonomous AI Red Teaming Engine</p>
+            <p class="card-desc">
+              Industry-leading framework for automated vulnerability discovery in AI Agents and LLM-powered systems. Orchestrates a 5-phase attack pipeline including goal hijacking and privilege escalation.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Gemini AI</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ 5-Phase Attack Pipeline</span>
+              <span>✓ Automated PDF Reporting</span>
+              <span>✓ OWASP LLM Top 10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specter-RAG -->
+        <div class="project-card featured reveal" id="proj-specter-rag">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-green">AI/RAG</span>
+              <span class="badge badge-purple">Knowledge base</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🔍</span></div>
+            <h3 class="card-title">Specter-RAG</h3>
+            <p class="card-subtitle">Neural Context Injection Engine</p>
+            <p class="card-desc">
+              High-performance Retrieval-Augmented Generation (RAG) system. Uses vector-sharding and semantic search to provide AI agents with ultra-low latency access to vast knowledge bases.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Gemini</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ Vector Sharding</span>
+              <span>✓ Zero-Latency Context</span>
+              <span>✓ Agent Optimized</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Axon -->
+        <div class="project-card featured reveal" id="proj-axon">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-purple">Security Engine</span>
+              <span class="badge badge-cyan">AI-Powered</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/axon" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🧠</span></div>
+            <h3 class="card-title">Axon</h3>
+            <p class="card-subtitle">Neural Security Evidence Backbone</p>
+            <p class="card-desc">
+              High-performance sharded actor engine for security evidence normalization. Processes 1M findings/sec with zero-copy ingress and AI-powered remediation.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">NATS</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Gemini AI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ 1M Findings/Sec</span>
+              <span>✓ Zero-Allocation Ingress</span>
+              <span>✓ Kali Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AuthSniper -->
+        <div class="project-card featured reveal" id="proj-authsniper">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-blue">Offensive</span>
+              <span class="badge badge-purple">AST-Driven</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/AuthSniper" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🎯</span></div>
+            <h3 class="card-title">AuthSniper</h3>
+            <p class="card-subtitle">AST-Driven BOLA/IDOR Hunter</p>
+            <p class="card-desc">
+              Advanced Go tool for automated IDOR/BOLA detection. Uses Abstract Syntax Tree (AST) response comparisons to achieve a 0% false positive rate by ignoring dynamic noise.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">AST</span>
+              <span class="tech-tag">Concurrency</span>
+              <span class="tech-tag">Homebrew</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ 0% False Positives</span>
+              <span>✓ Deep Structural Diffing</span>
+              <span>✓ CI/CD Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vex -->
+        <div class="project-card featured reveal" id="proj-vex">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-red">Logic Breaker</span>
+              <span class="badge badge-green">Stateful</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/vex" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">☣️</span></div>
+            <h3 class="card-title">Vex</h3>
+            <p class="card-subtitle">Stateful API Logic Fuzzer</p>
+            <p class="card-desc">
+              A zero-noise API fuzzer that hunts for logic flaws rather than syntax errors. Stateful session simulation for cross-user vulnerability hunting.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">OpenAPI</span>
+              <span class="tech-tag">Stateful</span>
+              <span class="tech-tag">WAF Evasion</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ Logic-Driven Fuzzing</span>
+              <span>✓ Zero-Noise Filter</span>
+              <span>✓ Swagger/OpenAPI Native</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aura -->
+        <div class="project-card featured reveal" id="proj-aura">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-red">Offensive</span>
+              <span class="badge badge-purple">AI-Powered</span>
+              <span class="badge badge-gold">Featured</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/aura-framework" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🛡️</span></div>
+            <h3 class="card-title">Aura</h3>
+            <p class="card-subtitle">Sentient Offensive Engine</p>
+            <p class="card-desc">
+              Autonomous AI-powered DAST framework that hunts, weaponizes, and reports vulnerabilities. 
+              Uses Google Vertex AI for strategic decision-making. Detects SQLi, XSS, SSTI, IDOR, SSRF, 
+              RCE, JWT abuse, BOLA, LFI, Open Redirect, and more.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">Vertex AI</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Flask</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ OWASP Top 10 Coverage</span>
+              <span>✓ Auto PoC Generation</span>
+              <span>✓ Bug Bounty Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kharma Sentinel -->
+        <div class="project-card featured reveal" id="proj-kharma">
+          <div class="card-glow glow-purple"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-blue">Defense</span>
+              <span class="badge badge-green">Production</span>
+              <span class="badge badge-purple" style="background: rgba(147, 51, 234, 0.15); color: #d8b4fe; border: 1px solid rgba(147, 51, 234, 0.3);">5.4K+ Downloads</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/kharma-network-radar" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">📡</span></div>
+            <h3 class="card-title">Kharma Sentinel</h3>
+            <p class="card-subtitle">Advanced Network Defense Suite</p>
+            <p class="card-desc">
+              Real-time network monitor with Deep Packet Inspection, automated EDR via VirusTotal (70+ AV engines), 
+              MaxMind Geo-Intelligence, active threat neutralization, and Telegram breach alerts. 
+              Packaged as a standalone Windows `.exe`.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Leaflet.js</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">MaxMind</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ 70+ AV Engine Scan</span>
+              <span>✓ Auto-Kill Malware</span>
+              <span>✓ .exe Packaged</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nexus-CTF -->
+        <div class="project-card reveal" id="proj-nexus">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-red">CTF</span>
+              <span class="badge badge-purple">AI Brain</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/nexus-ctf" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">⚔️</span></div>
+            <h3 class="card-title">Nexus-CTF</h3>
+            <p class="card-subtitle">Autonomous Exploitation Framework</p>
+            <p class="card-desc">
+              AI-powered CTF framework with a local Ollama LLM brain (Cognitive Exploit Engine). 
+              Auto-detects and exploits SSTI, SQLi, XSS, and JWT vulnerabilities. 
+              Built for PicoCTF, HackTheBox, and custom labs.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Ollama</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">SSTI</span>
+              <span class="tech-tag">SQLi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ameera -->
+        <div class="project-card reveal" id="proj-ameera">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-cyan">Blue Team</span>
+              <span class="badge badge-green">SOC</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/ameera" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">👑</span></div>
+            <h3 class="card-title">Ameera</h3>
+            <p class="card-subtitle">Blue Team Command Center</p>
+            <p class="card-desc">
+              Unified "war room" dashboard integrating Aura, Kharma, and Vanguard. 
+              Features auto-remediation for Windows misconfigurations (SMB, firewall), 
+              self-healing logic, and a glassmorphism SOC interface.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Windows API</span>
+              <span class="tech-tag">PyPI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Category: Web -->
+      <div class="category-label reveal" style="margin-top: 3rem;">
+        <span class="cat-icon">🌐</span> Web & Full-Stack
+      </div>
+      <div class="projects-grid">
+
+        <!-- CNE Official -->
+        <div class="project-card featured reveal" id="proj-cne-official">
+          <div class="card-glow" style="background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.25), transparent 70%);"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-blue">Official</span>
+              <span class="badge badge-green">Academic</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/cne-family-official" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🎓</span></div>
+            <h3 class="card-title">CNE Family Official</h3>
+            <p class="card-subtitle">Academic Networking Hub</p>
+            <p class="card-desc">
+              The authoritative platform for BAU Computer & Network Engineering students. Features a real-time track manager, course materials, study plans, and academic tracking.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Material UI</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ Real-time Tracker</span>
+              <span>✓ Academic CMS</span>
+              <span>✓ Official BAU Hub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reva Chalets -->
+        <div class="project-card featured reveal" id="proj-reva">
+          <div class="card-glow glow-amber"></div>
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-cyan">Next.js</span>
+              <span class="badge badge-green">Live</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/reva-chalets" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">🏡</span></div>
+            <h3 class="card-title">Reva Chalets</h3>
+            <p class="card-subtitle">Property Rental Platform</p>
+            <p class="card-desc">
+              Full-stack property rental web application with booking management, 
+              user authentication, mobile companion app, and Dockerized deployment. 
+              Deployed to Vercel with Prisma ORM for database management.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-highlights">
+              <span>✓ Mobile App Included</span>
+              <span>✓ Vercel Deployed</span>
+              <span>✓ Docker Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cafe Rewards -->
+        <div class="project-card reveal" id="proj-cafe">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-cyan">React</span>
+              <span class="badge badge-purple">Supabase</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/cafe-rewards" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">☕</span></div>
+            <h3 class="card-title">Café Rewards</h3>
+            <p class="card-subtitle">QR-Based Loyalty System</p>
+            <p class="card-desc">
+              Customer loyalty rewards platform with QR code scanning, 
+              points tracking, and reward redemption. Built with Vite + React + TypeScript 
+              and Supabase as the real-time backend.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Air Drawing -->
+        <div class="project-card reveal" id="proj-air">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-gold">Vanilla JS</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/air-drawing-app" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">✏️</span></div>
+            <h3 class="card-title">Air Drawing App</h3>
+            <p class="card-subtitle">Canvas Drawing Tool</p>
+            <p class="card-desc">
+              Browser-based drawing application with canvas API, 
+              multiple drawing tools, color palettes, and zero dependencies. 
+              Pure HTML, CSS & JavaScript.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Canvas API</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Category: Bots -->
+      <div class="category-label reveal" style="margin-top: 3rem;">
+        <span class="cat-icon">🤖</span> Automation & Bots
+      </div>
+      <div class="projects-grid projects-grid-small">
+
+        <!-- Telegram Daily Bot -->
+        <div class="project-card reveal" id="proj-tgbot">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-cyan">Cloud</span>
+              <span class="badge badge-green">24/7</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/telegram-daily-bot" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">📬</span></div>
+            <h3 class="card-title">Telegram Daily Bot</h3>
+            <p class="card-subtitle">Scheduled Messaging Bot</p>
+            <p class="card-desc">
+              24/7 Telegram bot deployed on Render cloud with Supabase persistence. 
+              Sends scheduled daily messages with state management across restarts.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Render</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Telegram API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Task Bot -->
+        <div class="project-card reveal" id="proj-taskbot">
+          <div class="card-header">
+            <div class="card-badges">
+              <span class="badge badge-purple">Telegram</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/Mutasem-mk4/smart-task-bot" target="_blank" rel="noopener" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-icon-wrap"><span class="card-emoji">✅</span></div>
+            <h3 class="card-title">Smart Task Bot</h3>
+            <p class="card-subtitle">Telegram Task Manager</p>
+            <p class="card-desc">
+              Telegram-based task management bot with reminders, 
+              priority queuing, and persistent storage.
+            </p>
+            <div class="card-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Telegram API</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// skills</span>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-pill skill-primary">Go / Golang</span>
+            <span class="skill-pill skill-primary">Python</span>
+            <span class="skill-pill skill-primary">TypeScript</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill">PowerShell</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Security</h3>
+          <div class="skill-tags">
+            <span class="skill-pill skill-red">AST Diffing</span>
+            <span class="skill-pill skill-red">BOLA / IDOR</span>
+            <span class="skill-pill skill-red">Business Logic</span>
+            <span class="skill-pill skill-red">DAST / SAST</span>
+            <span class="skill-pill skill-red">Bug Bounty</span>
+            <span class="skill-pill skill-red">OWASP Top 10</span>
+            <span class="skill-pill skill-red">Penetration Testing</span>
+            <span class="skill-pill skill-red">Reverse Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">AI & Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-pill skill-purple">Google Vertex AI</span>
+            <span class="skill-pill skill-purple">Ollama (Local LLMs)</span>
+            <span class="skill-pill skill-purple">LLM Orchestration</span>
+            <span class="skill-pill skill-purple">Autonomous Agents</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Web & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-pill skill-cyan">Next.js</span>
+            <span class="skill-pill skill-cyan">React</span>
+            <span class="skill-pill skill-cyan">Flask</span>
+            <span class="skill-pill skill-cyan">Vite</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">GraphQL</span>
+            <span class="skill-pill">Prisma ORM</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">Render</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">SQLite</span>
+            <span class="skill-pill">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-pill">Burp Suite</span>
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">Nmap / Nessus</span>
+            <span class="skill-pill">VirusTotal API</span>
+            <span class="skill-pill">MaxMind GeoIP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-glow"></div>
+        <div class="contact-inner">
+          <span class="section-tag">// contact</span>
+          <h2>Let's Work Together</h2>
+          <p class="contact-desc">
+            Open to security engineering roles, bug bounty collaboration, 
+            full-stack development, and enterprise security consulting.
+          </p>
+
+          <!-- Consulting Cards -->
+          <div class="consulting-cards">
+            <div class="consulting-card">
+              <div class="consulting-icon">🏢</div>
+              <h3>Enterprise Consulting</h3>
+              <p>Custom integration of Kharma Sentinel, Aura, and other security frameworks into your corporate environment. Network auditing, threat response planning, and SOC dashboards.</p>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kharma.mutasem@gmail.com&su=Enterprise%20Security%20Consulting" target="_blank" rel="noopener" class="consulting-cta">Get a Quote →</a>
+            </div>
+            <div class="consulting-card">
+              <div class="consulting-icon">🎯</div>
+              <h3>Penetration Testing</h3>
+              <p>Manual and automated web application security assessments using my own toolchain (Aura DAST Framework). OWASP Top 10, API security, and bug bounty methodology.</p>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kharma.mutasem@gmail.com&su=Penetration%20Testing%20Request" target="_blank" rel="noopener" class="consulting-cta">Start a Project →</a>
+            </div>
+            <div class="consulting-card">
+              <div class="consulting-icon">🤝</div>
+              <h3>Open Source Support</h3>
+              <p>Kharma Sentinel has 5,400+ downloads. If it saved your team hours of work, consider sponsoring its continued development and new features.</p>
+              <a href="https://github.com/sponsors/Mutasem-mk4" target="_blank" rel="noopener" class="consulting-cta">☕ Sponsor →</a>
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-btn" href="https://github.com/Mutasem-mk4" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a class="contact-btn contact-btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=kharma.mutasem@gmail.com" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ▸ FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">M<span class="accent">.</span></span>
+        <span class="footer-copy">Designed & Built by Mutasem — 2026</span>
+        <span class="footer-stack">Python · Go · TypeScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
