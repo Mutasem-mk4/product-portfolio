@@ -142,7 +142,7 @@ export default function Home() {
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="text-xs text-muted-foreground">
-            © 2025 Your Name
+            © 2026 Mutasem Kharma <span className="font-normal">(معتصم خرما)</span>
           </div>
           <div className="flex items-center gap-5">
             <a
@@ -154,15 +154,15 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/mutasem_mk4"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Twitter
+              Twitter / X
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/mutasem-kharma/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -170,7 +170,7 @@ export default function Home() {
               LinkedIn
             </a>
             <a
-              href="mailto:you@email.com"
+              href="mailto:kharma.mutasem@gmail.com"
               className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Email

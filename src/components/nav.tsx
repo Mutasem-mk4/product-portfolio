@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/sheet';
 
 const navLinks = [
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Projects', href: '#projects' },
   { label: 'Stack', href: '#stack' },
   { label: 'GitHub', href: 'https://github.com/Mutasem-mk4', external: true },
@@ -22,7 +23,7 @@ export function Nav() {
           href="/"
           className="text-base font-semibold tracking-tight text-foreground"
         >
-          yourname
+          Mutasem Kharma <span className="text-xs text-muted-foreground font-normal ml-1">(معتصم خرما)</span>
         </Link>
 
         {/* Desktop */}
@@ -40,7 +41,7 @@ export function Nav() {
           <Button
             size="sm"
             className="rounded-full"
-            onClick={() => (window.location.href = 'mailto:you@email.com')}
+            onClick={() => (window.location.href = 'mailto:kharma.mutasem@gmail.com')}
           >
             Get in Touch
           </Button>
@@ -77,7 +78,7 @@ export function Nav() {
               ))}
               <Button
                 className="mt-4"
-                onClick={() => (window.location.href = 'mailto:you@email.com')}
+                onClick={() => (window.location.href = 'mailto:kharma.mutasem@gmail.com')}
               >
                 Get in Touch
               </Button>
