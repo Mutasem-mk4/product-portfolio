@@ -120,7 +120,7 @@ export const projects: ProjectData[] = [
     tags: ['Python', 'Vertex AI', 'Multi-Agent AI', 'DAST', 'Docker'],
     status: 'Active',
     href: 'https://github.com/Mutasem-mk4/aura-framework',
-    stars: '1',
+    stars: '0',
   },
   {
     icon: (
@@ -143,7 +143,7 @@ export const projects: ProjectData[] = [
     tags: ['Python', 'Flask', 'MaxMind', 'VirusTotal', 'Security'],
     status: 'Shipped',
     href: 'https://github.com/Mutasem-mk4/kharma-network-radar',
-    stars: '5.4k+',
+    stars: '0',
   },
   {
     icon: (
@@ -167,7 +167,7 @@ export const projects: ProjectData[] = [
     tags: ['Python', 'FastAPI', 'vLLM', 'Presidio', 'AI Security'],
     status: 'Active',
     href: 'https://github.com/Mutasem-mk4/aegis-llm-firewall',
-    stars: '1',
+    stars: '0',
   },
   {
     icon: (
@@ -191,6 +191,6 @@ export const projects: ProjectData[] = [
     tags: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind', 'Vercel'],
     status: 'Shipped',
     href: 'https://github.com/Mutasem-mk4/reva-chalets4',
-    stars: '1',
+    stars: '0',
   },
 ];
