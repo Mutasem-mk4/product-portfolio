@@ -64,8 +64,7 @@ export default function RootLayout({
         },
         'sameAs': [
           'https://github.com/Mutasem-mk4',
-          'https://twitter.com/mutasem_mk4',
-          'https://www.linkedin.com/in/mutasem-kharma/',
+          'https://www.linkedin.com/in/mutasem-kharma-668499289/',
         ],
         'description': 'Offensive Security Engineer & Full-Stack Developer specializing in eBPF and autonomous security frameworks.',
       },

@@ -14,10 +14,21 @@ const navLinks = [
   { label: 'Education', href: '#education' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Stack', href: '#stack' },
+  { label: 'Contact', href: '#contact' },
   { label: 'GitHub', href: 'https://github.com/Mutasem-mk4', external: true },
 ];
 
 export function Nav() {
+  const handleGetInTouch = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const contactElem = document.getElementById('contact');
+    if (contactElem) {
+      contactElem.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = 'mailto:kharma.mutasem@gmail.com';
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -40,18 +51,16 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <Button
-            size="sm"
-            className="rounded-full"
-            onClick={() => (window.location.href = 'mailto:kharma.mutasem@gmail.com')}
-          >
-            Get in Touch
-          </Button>
+          <a href="#contact" onClick={handleGetInTouch}>
+            <Button size="sm" className="rounded-full">
+              Get in Touch
+            </Button>
+          </a>
         </div>
 
         {/* Mobile */}
         <Sheet>
-          <SheetTrigger>
+          <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden">
               <svg
                 width="20"
@@ -78,12 +87,11 @@ export function Nav() {
                   {link.label}
                 </Link>
               ))}
-              <Button
-                className="mt-4"
-                onClick={() => (window.location.href = 'mailto:kharma.mutasem@gmail.com')}
-              >
-                Get in Touch
-              </Button>
+              <a href="#contact" onClick={handleGetInTouch}>
+                <Button className="w-full mt-4">
+                  Get in Touch
+                </Button>
+              </a>
             </div>
           </SheetContent>
         </Sheet>

@@ -6,6 +6,7 @@ import { WorkflowPipeline } from '@/components/workflow-pipeline';
 import { Metrics } from '@/components/metrics';
 import { ProjectCard } from '@/components/project-card';
 import { TechStack } from '@/components/tech-stack';
+import { Contact } from '@/components/contact';
 import { projects } from '@/data/projects';
 
 export default function Home() {
@@ -146,6 +147,8 @@ export default function Home() {
 
       <TechStack />
 
+      <Contact />
+
       {/* Footer */}
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
@@ -162,7 +165,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/mutasem-kharma/"
+              href="https://www.linkedin.com/in/mutasem-kharma-668499289/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"

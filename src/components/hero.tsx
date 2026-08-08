@@ -80,7 +80,7 @@ export function Hero() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/mutasem-kharma/"
+              href="https://www.linkedin.com/in/mutasem-kharma-668499289/"
               target="_blank"
               rel="noopener noreferrer"
             >
