@@ -23,7 +23,7 @@ export const projects: ProjectData[] = [
     tags: ['Go', 'eBPF', 'Linux', 'BlackArch', 'Awesome Go'],
     status: 'Shipped',
     href: 'https://github.com/Mutasem-mk4/procscope',
-    stars: '2',
+    stars: '32',
   },
   {
     icon: (
