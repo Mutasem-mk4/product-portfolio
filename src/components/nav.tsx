@@ -9,8 +9,10 @@ import {
 } from '@/components/ui/sheet';
 
 const navLinks = [
-  { label: 'Gallery', href: '#gallery' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Highlights', href: '#highlights' },
+  { label: 'Education', href: '#education' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Stack', href: '#stack' },
   { label: 'GitHub', href: 'https://github.com/Mutasem-mk4', external: true },
 ];
@@ -21,7 +23,7 @@ export function Nav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-base font-semibold tracking-tight text-foreground"
+          className="text-base font-semibold tracking-tight text-foreground hover:text-primary transition-colors"
         >
           Mutasem Kharma
         </Link>

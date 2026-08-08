@@ -1,5 +1,7 @@
 import { Nav } from '@/components/nav';
 import { Hero } from '@/components/hero';
+import { Highlights } from '@/components/highlights';
+import { Education } from '@/components/education';
 import { WorkflowPipeline } from '@/components/workflow-pipeline';
 import { Metrics } from '@/components/metrics';
 import { ProjectCard } from '@/components/project-card';
@@ -11,6 +13,8 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       <Nav />
       <Hero />
+      <Highlights />
+      <Education />
       <WorkflowPipeline />
       <Metrics />
 
@@ -146,7 +150,7 @@ export default function Home() {
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="text-xs text-muted-foreground">
-            © 2026 Mutasem Kharma
+            © 2026 Mutasem Kharma • Computer Engineering Senior
           </div>
           <div className="flex items-center gap-5">
             <a
@@ -158,20 +162,19 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://twitter.com/mutasem_mk4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Twitter / X
-            </a>
-            <a
               href="https://www.linkedin.com/in/mutasem-kharma/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               LinkedIn
+            </a>
+            <a
+              href="/Mutasem_Kharma_CV.docx"
+              download="Mutasem_Kharma_CV.docx"
+              className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              CV / Resume
             </a>
             <a
               href="mailto:kharma.mutasem@gmail.com"

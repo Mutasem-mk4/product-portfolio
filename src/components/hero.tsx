@@ -3,15 +3,15 @@ import { Badge } from '@/components/ui/badge';
 
 export function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-24 pb-16">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-8">
-        <div>
+    <section className="max-w-6xl mx-auto px-6 pt-20 pb-16">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 mb-8">
+        <div className="flex-1">
           <Badge
             variant="secondary"
             className="mb-6 rounded-full px-3 py-1 text-xs font-medium bg-[#ebf5ff] text-[#0068d6] border-0"
           >
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#0a72ef] mr-1.5" />
-            Available for work & opportunities
+            Computer Engineering Senior @ BAU • Open-Source Builder
           </Badge>
 
           <h1 className="text-[clamp(2.5rem,7vw,4rem)] font-semibold leading-[1.1] tracking-[-0.05em] text-foreground mb-4">
@@ -19,12 +19,32 @@ export function Hero() {
           </h1>
 
           <p className="text-xl text-muted-foreground leading-[1.8] max-w-2xl mb-8">
-            Offensive Security Engineer & Full-Stack Developer. Specializing in eBPF process tracing, autonomous AI-powered vulnerability engines, and scalable production systems.
+            Computer engineering student who builds practical technical tools — open-source cybersecurity software recognized in <span className="text-foreground font-medium">BlackArch Linux</span> and <span className="text-foreground font-medium">Awesome Go</span>, AI-driven security engines, and multi-agent systems.
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <a href="/Mutasem_Kharma_CV.docx" download="Mutasem_Kharma_CV.docx">
+              <Button size="lg" className="rounded-lg gap-2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download CV
+              </Button>
+            </a>
+
             <a href="#projects">
-              <Button size="lg">
+              <Button variant="outline" size="lg" className="rounded-lg gap-2">
                 View Projects
                 <svg
                   width="14"
@@ -40,17 +60,13 @@ export function Hero() {
                 </svg>
               </Button>
             </a>
-            <a href="#gallery">
-              <Button variant="outline" size="lg">
-                View Gallery & Photos
-              </Button>
-            </a>
+
             <a
               href="https://github.com/Mutasem-mk4"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="rounded-lg gap-2">
                 <svg
                   width="16"
                   height="16"
@@ -62,17 +78,35 @@ export function Hero() {
                 GitHub
               </Button>
             </a>
+
+            <a
+              href="https://www.linkedin.com/in/mutasem-kharma/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg" className="rounded-lg gap-2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                </svg>
+                LinkedIn
+              </Button>
+            </a>
           </div>
         </div>
 
         {/* Profile Avatar Image */}
         <div className="relative shrink-0 mx-auto md:mx-0">
-          <div className="w-40 h-40 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-tr from-blue-500 to-cyan-400 shadow-xl">
+          <div className="w-44 h-44 md:w-52 md:h-52 rounded-full p-1 bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 shadow-2xl">
             <img
               src="/moatasem-khorma.jpg"
-              alt="Mutasem Kharma (معتصم خرما) — Official Portrait"
-              title="Mutasem Kharma (معتصم خرما)"
-              className="w-full h-full object-cover rounded-full border-2 border-background"
+              alt="Mutasem Kharma — Official Portrait"
+              title="Mutasem Kharma"
+              className="w-full h-full object-cover rounded-full border-4 border-background"
             />
           </div>
         </div>

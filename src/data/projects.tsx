@@ -19,11 +19,36 @@ export const projects: ProjectData[] = [
     ),
     title: 'procscope',
     description:
-      'Zero-overhead eBPF process tracer for Linux malware triage and incident response. Traces syscalls, network, and file activity per-process.',
-    tags: ['Go', 'eBPF', 'Linux', 'Debian', 'BlackArch'],
+      'Zero-overhead eBPF process tracer for Linux malware triage. Recognized and accepted into official BlackArch Linux repository and curated Awesome Go ecosystem.',
+    tags: ['Go', 'eBPF', 'Linux', 'BlackArch', 'Awesome Go'],
     status: 'Shipped',
     href: 'https://github.com/Mutasem-mk4/procscope',
     stars: '2',
+  },
+  {
+    icon: (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+      </svg>
+    ),
+    title: 'CNE Family Official',
+    description:
+      'Authoritative platform for BAU Computer & Network Engineering students with track manager, study plans, and real-time academic tracking.',
+    tags: ['TypeScript', 'React', 'Vite', 'Supabase', 'Academic'],
+    status: 'Shipped',
+    href: 'https://github.com/Mutasem-mk4/cne-family-official',
+    demoHref: 'https://cne-family-official.vercel.app',
+    stars: '1',
   },
   {
     icon: (
@@ -91,8 +116,8 @@ export const projects: ProjectData[] = [
     ),
     title: 'Aura Framework',
     description:
-      'Sentient, autonomous offensive security framework powered by Vertex AI. Hunts, weaponizes, and reports vulnerabilities automatically.',
-    tags: ['Python', 'Vertex AI', 'Offensive Security', 'DAST', 'Docker'],
+      'Sentient, autonomous multi-agent offensive security framework powered by Vertex AI. Hunts, weaponizes, and reports vulnerabilities automatically.',
+    tags: ['Python', 'Vertex AI', 'Multi-Agent AI', 'DAST', 'Docker'],
     status: 'Active',
     href: 'https://github.com/Mutasem-mk4/aura-framework',
     stars: '1',
@@ -142,30 +167,6 @@ export const projects: ProjectData[] = [
     tags: ['Python', 'FastAPI', 'vLLM', 'Presidio', 'AI Security'],
     status: 'Active',
     href: 'https://github.com/Mutasem-mk4/aegis-llm-firewall',
-    stars: '1',
-  },
-  {
-    icon: (
-      <svg
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c3 3 9 3 12 0v-5" />
-      </svg>
-    ),
-    title: 'CNE Family Official',
-    description:
-      'Authoritative platform for BAU Computer & Network Engineering students with track manager, study plans, and real-time academic tracking.',
-    tags: ['TypeScript', 'React', 'Vite', 'Supabase', 'Academic'],
-    status: 'Shipped',
-    href: 'https://github.com/Mutasem-mk4/cne-family-official',
     stars: '1',
   },
   {
