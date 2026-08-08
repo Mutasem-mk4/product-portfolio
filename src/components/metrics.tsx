@@ -1,7 +1,7 @@
 const metrics = [
-  { value: '12', unit: '+', label: 'Projects Shipped' },
-  { value: '3', unit: 'yr', label: 'Building for the Web' },
-  { value: '8', unit: 'k', label: 'GitHub Stars' },
+  { value: '19', unit: '+', label: 'Projects Built & Shipped' },
+  { value: '9', unit: '+', label: 'Security & eBPF Tools' },
+  { value: '6.2', unit: 'k+', label: 'PyPI / Tool Downloads' },
 ];
 
 export function Metrics() {

@@ -59,6 +59,8 @@ export function ProjectCard({ project }: { project: ProjectData }) {
         <div className="flex items-center justify-between">
           <a
             href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium text-[#0072f5] underline underline-offset-2 hover:text-[#0a72ef] transition-colors"
           >
             View Project →

@@ -1,16 +1,16 @@
 const stack = [
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
   'Go',
-  'Rust',
+  'eBPF CO-RE',
   'Python',
-  'PostgreSQL',
-  'Redis',
+  'Linux Kernel',
+  'Vertex AI',
   'Docker',
-  'GraphQL',
-  'AWS',
+  'FastAPI',
+  'Next.js',
+  'React',
+  'TypeScript',
+  'Supabase',
+  'PostgreSQL',
 ];
 
 export function TechStack() {

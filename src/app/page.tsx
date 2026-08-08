@@ -17,19 +17,23 @@ export default function Home() {
       {/* Trust Bar */}
       <section className="max-w-6xl mx-auto px-6 pb-20 text-center">
         <div className="font-mono text-xs font-medium uppercase tracking-widest text-muted-foreground mb-6">
-          Trusted By
+          Affiliations & Distro Contributions
         </div>
-        <div className="flex items-center justify-center gap-10 flex-wrap opacity-40">
-          {['Company A', 'Startup B', 'Org C', 'Project D', 'Team E'].map(
-            (name) => (
-              <span
-                key={name}
-                className="text-lg font-semibold tracking-[-0.04em] text-muted-foreground"
-              >
-                {name}
-              </span>
-            )
-          )}
+        <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap opacity-60">
+          {[
+            'Crown Prince Foundation',
+            'BAU Engineering',
+            'ParrotSec Distro',
+            'BlackArch Linux',
+            'Debian Security',
+          ].map((name) => (
+            <span
+              key={name}
+              className="text-base font-semibold tracking-[-0.03em] text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {name}
+            </span>
+          ))}
         </div>
       </section>
 

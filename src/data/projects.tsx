@@ -19,7 +19,7 @@ export const projects: ProjectData[] = [
     ),
     title: 'procscope',
     description:
-      'eBPF runtime investigation tool for Linux malware triage with process-scoped tracing, Debian autopkgtests, and upstream distro-submission work.',
+      'Zero-overhead eBPF process tracer for Linux malware triage and incident response. Traces syscalls, network, and file activity per-process.',
     tags: ['Go', 'eBPF', 'Linux', 'Debian', 'BlackArch'],
     status: 'Shipped',
     href: 'https://github.com/Mutasem-mk4/procscope',
@@ -37,17 +37,17 @@ export const projects: ProjectData[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <rect x="2" y="3" width="20" height="14" rx="2" />
-        <path d="M8 21h8M12 17v4" />
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 8v4l3 3" />
       </svg>
     ),
-    title: 'DevDash',
+    title: 'gspy',
     description:
-      'Developer dashboard aggregating GitHub, CI/CD, and monitoring into a single view with customizable widgets.',
-    tags: ['Next.js', 'GraphQL', 'PostgreSQL', 'Docker'],
-    status: 'Active',
-    href: '#',
-    stars: '1.1k',
+      'Advanced eBPF-driven Digital Forensics & Incident Response (DFIR) framework for live Golang malware analysis and threat hunting.',
+    tags: ['Go', 'eBPF', 'DFIR', 'Malware Analysis', 'Linux'],
+    status: 'Shipped',
+    href: 'https://github.com/Mutasem-mk4/gspy',
+    stars: '1',
   },
   {
     icon: (
@@ -65,13 +65,13 @@ export const projects: ProjectData[] = [
         <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
       </svg>
     ),
-    title: 'APIForge',
+    title: 'Vex',
     description:
-      'Open-source API testing framework with declarative syntax, automatic test generation, and CI/CD integration.',
-    tags: ['Go', 'gRPC', 'YAML', 'Actions'],
+      'High-performance BOLA & Business Logic vulnerability scanner designed for automated IDOR detection with near-zero false positives.',
+    tags: ['Go', 'Security', 'BOLA', 'IDOR', 'Fuzzer'],
     status: 'Shipped',
-    href: '#',
-    stars: '3.2k',
+    href: 'https://github.com/Mutasem-mk4/Vex',
+    stars: '1',
   },
   {
     icon: (
@@ -85,17 +85,40 @@ export const projects: ProjectData[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path d="M8 21h8M12 17v4" />
       </svg>
     ),
-    title: 'Mesh Network',
+    title: 'Aura Framework',
     description:
-      'Decentralized messaging protocol with peer-to-peer connections, end-to-end encryption, and zero-knowledge proofs.',
-    tags: ['Rust', 'WebRTC', 'Libp2p', 'WASM'],
+      'Sentient, autonomous offensive security framework powered by Vertex AI. Hunts, weaponizes, and reports vulnerabilities automatically.',
+    tags: ['Python', 'Vertex AI', 'Offensive Security', 'DAST', 'Docker'],
+    status: 'Active',
+    href: 'https://github.com/Mutasem-mk4/aura-framework',
+    stars: '1',
+  },
+  {
+    icon: (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+    title: 'Kharma Sentinel',
+    description:
+      'Real-time network defense suite with Deep Packet Inspection, MaxMind GeoIP intelligence, VirusTotal EDR scanning, and threat neutralization.',
+    tags: ['Python', 'Flask', 'MaxMind', 'VirusTotal', 'Security'],
     status: 'Shipped',
-    href: '#',
-    stars: '890',
+    href: 'https://github.com/Mutasem-mk4/kharma-network-radar',
+    stars: '5.4k+',
   },
   {
     icon: (
@@ -113,13 +136,13 @@ export const projects: ProjectData[] = [
         <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
       </svg>
     ),
-    title: 'PackageKit',
+    title: 'Aegis LLM Firewall',
     description:
-      'Universal package manager CLI with workspace management, auto versioning, changelogs, and monorepo support.',
-    tags: ['Node.js', 'CLI', 'Monorepo', 'Turborepo'],
+      'Zero-Trust LLM Firewall & Enterprise AI Gateway that intercepts GenAI requests, strips PII, and blocks prompt injections in under 40ms.',
+    tags: ['Python', 'FastAPI', 'vLLM', 'Presidio', 'AI Security'],
     status: 'Active',
-    href: '#',
-    stars: '560',
+    href: 'https://github.com/Mutasem-mk4/aegis-llm-firewall',
+    stars: '1',
   },
   {
     icon: (
@@ -133,15 +156,40 @@ export const projects: ProjectData[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
       </svg>
     ),
-    title: 'DesignTokens',
+    title: 'CNE Family Official',
     description:
-      'Design token platform syncing Figma, CSS, and code with version control, diff previews, and team collaboration.',
-    tags: ['Python', 'FastAPI', 'React', 'Figma API'],
+      'Authoritative platform for BAU Computer & Network Engineering students with track manager, study plans, and real-time academic tracking.',
+    tags: ['TypeScript', 'React', 'Vite', 'Supabase', 'Academic'],
     status: 'Shipped',
-    href: '#',
-    stars: '420',
+    href: 'https://github.com/Mutasem-mk4/cne-family-official',
+    stars: '1',
+  },
+  {
+    icon: (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+    title: 'Reva Chalets',
+    description:
+      'Full-stack luxury chalets booking and property rental platform built with Next.js, Prisma ORM, TypeScript, and mobile app integration.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind', 'Vercel'],
+    status: 'Shipped',
+    href: 'https://github.com/Mutasem-mk4/reva-chalets4',
+    stars: '1',
   },
 ];
