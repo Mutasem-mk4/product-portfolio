@@ -60,7 +60,7 @@ export function Nav() {
 
         {/* Mobile */}
         <Sheet>
-          <SheetTrigger asChild>
+          <SheetTrigger>
             <Button variant="ghost" size="icon" className="md:hidden">
               <svg
                 width="20"
