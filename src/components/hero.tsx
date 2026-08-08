@@ -15,7 +15,7 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-[clamp(2.5rem,7vw,4rem)] font-semibold leading-[1.1] tracking-[-0.05em] text-foreground mb-4">
-            Mutasem Kharma <span className="text-xl md:text-2xl text-muted-foreground font-normal ml-2">(معتصم خرما)</span>
+            Mutasem Kharma
           </h1>
 
           <p className="text-xl text-muted-foreground leading-[1.8] max-w-2xl mb-8">

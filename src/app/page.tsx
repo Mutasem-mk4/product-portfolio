@@ -44,7 +44,7 @@ export default function Home() {
             // media & gallery
           </div>
           <h2 className="text-[clamp(2rem,4vw,2.5rem)] font-semibold tracking-[-0.05em] mb-2">
-            Mutasem Kharma In Action <span className="text-muted-foreground font-normal">(معتصم خرما)</span>
+            Mutasem Kharma In Action
           </h2>
           <p className="text-muted-foreground text-lg">
             Engineering security tools, presenting projects, and building in public.
@@ -57,8 +57,8 @@ export default function Home() {
             <div className="aspect-[4/3] overflow-hidden bg-muted relative">
               <img
                 src="/moatasem-khorma-official.jpg"
-                alt="معتصم خرما - Mutasem Kharma Official Portrait"
-                title="معتصem خرما - Mutasem Kharma Official Portrait"
+                alt="Mutasem Kharma Official Portrait"
+                title="Mutasem Kharma Official Portrait"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
                 Official Portrait
               </span>
               <h3 className="font-semibold text-lg text-foreground mb-1">
-                Mutasem Kharma <span className="text-muted-foreground font-normal">(معتصم خرما)</span>
+                Mutasem Kharma
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">
                 Offensive Security Engineer & Full-Stack Developer
@@ -80,8 +80,8 @@ export default function Home() {
             <div className="aspect-[4/3] overflow-hidden bg-muted relative">
               <img
                 src="/moatasem-khorma-work-crown-prince-foundation.jpg"
-                alt="معتصم خرما في مؤسسة ولي العهد - Mutasem Kharma at Crown Prince Foundation"
-                title="معتصم خرما - Crown Prince Foundation"
+                alt="Mutasem Kharma at Crown Prince Foundation"
+                title="Mutasem Kharma - Crown Prince Foundation"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -90,10 +90,10 @@ export default function Home() {
                 Engineering & Security
               </span>
               <h3 className="font-semibold text-lg text-foreground mb-1">
-                Crown Prince Foundation <span className="text-muted-foreground font-normal">(مؤسسة ولي العهد)</span>
+                Crown Prince Foundation
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Mutasem Kharma (معتصم خرما) engineering low-level eBPF & security tools
+                Mutasem Kharma engineering low-level eBPF & security tools
               </p>
             </figcaption>
           </figure>
@@ -103,8 +103,8 @@ export default function Home() {
             <div className="aspect-[4/3] overflow-hidden bg-muted relative">
               <img
                 src="/moatasem-khorma-zinc-zain-event.jpg"
-                alt="معتصم خرما في منصة زين للإبداع - Mutasem Kharma at Zain Innovation Campus (ZINC)"
-                title="معتصم خرما - Zain Innovation Campus"
+                alt="Mutasem Kharma at Zain Innovation Campus (ZINC)"
+                title="Mutasem Kharma - Zain Innovation Campus"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
                 Zain Innovation Campus <span className="text-muted-foreground font-normal">(ZINC)</span>
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Mutasem Kharma (معتصم خرما) with tech community colleagues at Zain Esports / ZINC
+                Mutasem Kharma with tech community colleagues at Zain Esports / ZINC
               </p>
             </figcaption>
           </figure>
@@ -146,7 +146,7 @@ export default function Home() {
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="text-xs text-muted-foreground">
-            © 2026 Mutasem Kharma <span className="font-normal">(معتصم خرما)</span>
+            © 2026 Mutasem Kharma
           </div>
           <div className="flex items-center gap-5">
             <a

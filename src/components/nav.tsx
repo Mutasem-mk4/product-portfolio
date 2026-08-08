@@ -23,7 +23,7 @@ export function Nav() {
           href="/"
           className="text-base font-semibold tracking-tight text-foreground"
         >
-          Mutasem Kharma <span className="text-xs text-muted-foreground font-normal ml-1">(معتصم خرما)</span>
+          Mutasem Kharma
         </Link>
 
         {/* Desktop */}
