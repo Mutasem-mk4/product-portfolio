@@ -65,7 +65,7 @@ export default function Home() {
                 alt="Mutasem Kharma Official Portrait"
                 title="Mutasem Kharma Official Portrait"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                style={{ objectPosition: 'center 40%' }}
+                style={{ objectPosition: 'center 25%' }}
               />
             </div>
             <figcaption className="p-5">

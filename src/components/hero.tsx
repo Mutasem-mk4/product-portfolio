@@ -107,7 +107,7 @@ export function Hero() {
               alt="Mutasem Kharma — Official Portrait"
               title="Mutasem Kharma"
               className="w-full h-full object-cover rounded-full border-4 border-background"
-              style={{ objectPosition: 'center 40%' }}
+              style={{ objectPosition: 'center 25%' }}
             />
           </div>
         </div>
