@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mutasem Kharma (معتصم خرما) | Security Engineer & Builder',
     description: 'Portfolio of Mutasem Kharma (معتصم خرما), focusing on low-level system observation and autonomous security agents.',
-    url: 'https://mutasem-portfolio.vercel.app/',
+    url: 'https://mutasem.tech/',
     siteName: 'Mutasem Kharma Portfolio',
     images: [
       {
-        url: 'https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg',
+        url: 'https://mutasem.tech/moatasem-khorma.jpg',
         width: 800,
         height: 800,
         alt: 'Mutasem Kharma (معتصم خرما) Official Portrait',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mutasem Kharma (معتصم خرما) | Security Engineer & Builder',
     description: 'Portfolio of Mutasem Kharma (معتصم خرما), focusing on low-level system observation and autonomous security agents.',
-    images: ['https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg'],
+    images: ['https://mutasem.tech/moatasem-khorma.jpg'],
   },
 };
 
@@ -51,11 +51,11 @@ export default function RootLayout({
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://mutasem-portfolio.vercel.app/#person',
+        '@id': 'https://mutasem.tech/#person',
         'name': 'Mutasem Kharma',
         'alternateName': ['معتصم خرما', 'Moatasem Khorma', 'معتصم خرمة'],
-        'url': 'https://mutasem-portfolio.vercel.app/',
-        'image': 'https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg',
+        'url': 'https://mutasem.tech/',
+        'image': 'https://mutasem.tech/moatasem-khorma.jpg',
         'jobTitle': 'Security Engineer & Full-Stack Developer',
         'address': {
           '@type': 'PostalAddress',
@@ -70,27 +70,27 @@ export default function RootLayout({
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://mutasem-portfolio.vercel.app/#official-photo',
+        '@id': 'https://mutasem.tech/#official-photo',
         'name': 'Mutasem Kharma Official Portrait (معتصم خرما)',
-        'contentUrl': 'https://mutasem-portfolio.vercel.app/moatasem-khorma.jpg',
+        'contentUrl': 'https://mutasem.tech/moatasem-khorma.jpg',
         'caption': 'Mutasem Kharma (معتصم خرما) — Security Engineer Official Portrait',
-        'author': { '@id': 'https://mutasem-portfolio.vercel.app/#person' },
+        'author': { '@id': 'https://mutasem.tech/#person' },
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://mutasem-portfolio.vercel.app/#crown-prince-photo',
+        '@id': 'https://mutasem.tech/#crown-prince-photo',
         'name': 'Mutasem Kharma at Crown Prince Foundation (معتصم خرما في مؤسسة ولي العهد)',
-        'contentUrl': 'https://mutasem-portfolio.vercel.app/moatasem-khorma-work-crown-prince-foundation.jpg',
+        'contentUrl': 'https://mutasem.tech/moatasem-khorma-work-crown-prince-foundation.jpg',
         'caption': 'Mutasem Kharma (معتصم خرما) developing security tools at Crown Prince Foundation',
-        'author': { '@id': 'https://mutasem-portfolio.vercel.app/#person' },
+        'author': { '@id': 'https://mutasem.tech/#person' },
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://mutasem-portfolio.vercel.app/#zinc-event-photo',
+        '@id': 'https://mutasem.tech/#zinc-event-photo',
         'name': 'Mutasem Kharma at Zain Innovation Campus ZINC (معتصم خرما في منصة زين للإبداع)',
-        'contentUrl': 'https://mutasem-portfolio.vercel.app/moatasem-khorma-zinc-zain-event.jpg',
+        'contentUrl': 'https://mutasem.tech/moatasem-khorma-zinc-zain-event.jpg',
         'caption': 'Mutasem Kharma (معتصم خرما) at Zain Innovation Campus / Zain Esports',
-        'author': { '@id': 'https://mutasem-portfolio.vercel.app/#person' },
+        'author': { '@id': 'https://mutasem.tech/#person' },
       },
     ],
   };
